@@ -15,12 +15,17 @@ $(document).ready(function(){
 // 	$  ('.container').siblings().fadeTo(1000, 1);
 //  });
 
- $('.theButton').mouseenter(function(){
-	$(this).addClass('black');
- });
+//  $('.theButton').mouseenter(function(){
+// 	$(this).addClass('black');
+//  });
 
-$('.theButton').mouseleave(function(){
-	$(this).removeClass('black');
+// $('.theButton').mouseleave(function(){
+// 	$(this).removeClass('black');
+//  });
+
+ $('.theButton').click(function(){
+     var colorName=$(this).css('background-color');
+    $('.superButton').text(colorName);
  });
 
 });
